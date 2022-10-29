@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.login{
+    box-shadow: 5px 5px 20px black;
+    width: 50%;
+    margin-top: 4%;
+}
+
+.registrar, .recuperar{
+    box-shadow: 5px 5px 20px black;
+    width: 50%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.grid_acerca{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "grid_acerca_1 grid_acerca_2 grid_acerca_3";
+    gap: 10px;
+}
+
+.grid_acerca_1{
+    grid-area: grid_acerca_1;
+}
+
+.grid_acerca_2{
+    grid-area: grid_acerca_2;
+}
+
+.grid_acerca_3{
+    grid-area: grid_acerca_3;
+}
+
+@media (max-width:820px){
+    .login, .registrar, .recuperar{
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .grid_acerca{
+        grid-template-columns: 100%;
+        grid-template-areas: "grid_acerca_1" "grid_acerca_2" "grid_acerca_3";
+    }
+
+    .principal{
+        width: auto;
+    }
+}
